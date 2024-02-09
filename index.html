@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <nav  class="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Pagina</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="inicio">
+            <h1 class="p-3 ">Introducción a los textos en bootstrap</h1>
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="./src/miFoto.jpg" class="rounded img-thumbnail imgPrincipal" alt="miFoto">
+                </div>
+                <div class="col">
+                    <p class="fs-5 lh-lg fw-light">Bootstrap es un poderoso framework de código abierto que facilita la creación de sitios web y aplicaciones responsivas. Desarrollado por Twitter, Bootstrap ha ganado popularidad gracias a su simplicidad, flexibilidad y capacidad para agilizar el proceso de desarrollo web.</p>
+                    <p class="fs-5 lh-lg fw-light">Con Bootstrap, los desarrolladores tienen acceso a una amplia gama de componentes y herramientas preestablecidas que les permiten crear interfaces de usuario atractivas y funcionales de manera rápida y eficiente. Desde sistemas de rejilla flexibles hasta componentes de navegación, formularios y elementos de diseño, Bootstrap ofrece una solución integral para construir sitios web modernos y adaptativos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog">
+            <h1 class="fw-bold title-blog">Blog</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Entrada</h2>
+                    <p class=" fs-6 lh-lg " >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat metus id fermentum efficitur.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Entrada 2</h2>
+                    <p class=" fs-6 lh-lg ">Integer vitae metus ac ante bibendum viverra. Sed nec tempor eros. Vestibulum euismod, nisi nec cursus mollis, est libero tempor est, ut fringilla felis quam nec risus.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Entrada 3</h2>
+                    <p class=" fs-6 lh-lg">Nulla facilisi. Vestibulum ultricies, mauris nec sodales rutrum, ipsum orci ullamcorper nisi, et fermentum felis quam a turpis. Proin ultricies bibendum libero, in consequat leo condimentum sed.</p>
+                </div>
+            </div>
+        </div>
+         
+
+        <div class=" contact" id="contacto">
+            <h1 class="fw-bold ">Contáctame</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                  <input type="text"  required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Correo electrónico</label>
+                  <input type="email" required class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                  <textarea class="form-control" required  id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+              </form>
+        </div>
+          
+        <!--<h1 class="p-3 ">Introducción a los textos en bootstrap</h1>
+        <p class="fs-5 lh-lg fw-light my-3">Bootstrap es un poderoso framework de código abierto que facilita la creación de sitios web y aplicaciones responsivas. Desarrollado por Twitter, Bootstrap ha ganado popularidad gracias a su simplicidad, flexibilidad y capacidad para agilizar el proceso de desarrollo web.</p>
+        <p class="fs-5 lh-lg  my-3">Con Bootstrap, los desarrolladores tienen acceso a una amplia gama de componentes y herramientas preestablecidas que les permiten crear interfaces de usuario atractivas y funcionales de manera rápida y eficiente. Desde sistemas de rejilla flexibles hasta componentes de navegación, formularios y elementos de diseño, Bootstrap ofrece una solución integral para construir sitios web modernos y adaptativos.</p>
+        <div class="d-grid gap-2 col-6 mx-auto my-3">
+            <button class="btn btn-primary" type="button">Saber más</button>
+        </div>
+
+        <div class=" d-grid gap-2 col-6 mx-auto btn-group-vertical my-6" role="group" aria-label="Vertical radio toggle button group">
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+            <label class="btn btn-outline-danger" for="vbtn-radio1">Ejemplo 1</label>
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+            <label class="btn btn-outline-danger" for="vbtn-radio2">Ejemplo 2</label>
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+            <label class="btn btn-outline-danger" for="vbtn-radio3">Ejemplo 3</label>
+          </div>-->
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
